@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: S3 BACKET DEMO.
+Resources:
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      AccessControl: PublicRead
+      BucketName: bmkjnaveen09092022
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        ErrorDocument: error.html
+    DeletionPolicy: Retain
